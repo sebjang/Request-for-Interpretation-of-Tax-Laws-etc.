@@ -32,8 +32,8 @@ are established. The request sets out twelve numbered questions:
 | File | Contents |
 |---|---|
 | `01_application.pdf` | The Request for Interpretation of Tax Laws, etc. itself — 12 pages, on the prescribed form (Form 1 of the Ministry's administrative rules) |
-| `02_application_with_evidence.pdf` | **152 pages. This single file is sufficient.** The request and the evidence volume merged, with 298 internal links from each citation to the page of the cited exhibit |
-| `03_volume2_evidence.pdf` | 140 pages. 34 exhibits, each preceded by a one-page evidence card |
+| `02_application_with_evidence.pdf` | **178 pages. This single file is sufficient.** The request and the evidence volume merged, with 298 internal links from each citation to the page of the cited exhibit |
+| `03_volume2_evidence.pdf` | 166 pages. 34 exhibits, each preceded by a one-page evidence card |
 | `04_volume3_patent_specifications.pdf` | 355 pages. Six patent application specifications disclosing the verification method used |
 | `05_evidence_package.zip` | The 37 source files, one per exhibit. Unpack the archive; the index links work inside the unpacked folder |
 
