@@ -31,10 +31,10 @@ are established. The request sets out twelve numbered questions:
 
 | File | Contents |
 |---|---|
-| `01_세법등해석신청서.pdf` | The Request for Interpretation of Tax Laws, etc. itself — 12 pages, on the prescribed form (Form 1 of the Ministry's administrative rules) |
-| `02_합본_신청서와_근거자료집.pdf` | **152 pages. This single file is sufficient.** The request and the evidence volume merged, with 298 internal links from each citation to the page of the cited exhibit |
-| `03_제2권_근거자료집.pdf` | 140 pages. 34 exhibits, each preceded by a one-page evidence card |
-| `04_제3권_기술적대안_특허출원명세서.pdf` | 355 pages. Six patent application specifications disclosing the verification method used |
+| `01_application.pdf` | The Request for Interpretation of Tax Laws, etc. itself — 12 pages, on the prescribed form (Form 1 of the Ministry's administrative rules) |
+| `02_application_with_evidence.pdf` | **152 pages. This single file is sufficient.** The request and the evidence volume merged, with 298 internal links from each citation to the page of the cited exhibit |
+| `03_volume2_evidence.pdf` | 140 pages. 34 exhibits, each preceded by a one-page evidence card |
+| `04_volume3_patent_specifications.pdf` | 355 pages. Six patent application specifications disclosing the verification method used |
 
 ## Exhibit numbering
 
