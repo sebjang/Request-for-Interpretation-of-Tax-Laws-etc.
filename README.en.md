@@ -56,6 +56,7 @@ The request sets out twenty-one numbered questions:
 | `04_volume3_patent_specifications.pdf` | 355 pages. Six patent application specifications disclosing the verification method used (technical verification material) |
 | `05_evidence_package.zip` | The 47 source files, one per exhibit. Unpack the archive; the index links work inside the unpacked folder |
 | `06_bilingual_korean_english.pdf` | 45 pages. **Korean–English parallel text** of sections ⑨ to ⑭ of the request: the Korean as filed on the left, the English alongside it, paragraph by paragraph (220 paragraphs) |
+| `07_application_english.pdf` | 31 pages. **English edition** — sections (9) to (14) of the request in English alone. The Korean text is the authentic version and prevails in case of any difference |
 
 ## Exhibit numbering
 
