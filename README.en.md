@@ -58,6 +58,16 @@ The request sets out twenty-one numbered questions:
 | `06_bilingual_korean_english.pdf` | 45 pages. **Korean–English parallel text** of sections ⑨ to ⑭ of the request: the Korean as filed on the left, the English alongside it, paragraph by paragraph (220 paragraphs) |
 | `07_application_english.pdf` | 31 pages. **English edition** — sections (9) to (14) of the request in English alone. The Korean text is the authentic version and prevails in case of any difference |
 
+## Related proceedings
+
+Two records from proceedings that run alongside this request, published because each shows,
+from outside the request itself, what the administrative record does and does not contain.
+
+| File | Contents |
+| --- | --- |
+| `08_nts_disclosure_decisions.pdf` | 5 pages, Korean–English parallel. Information-disclosure decisions of the National Tax Service on the work standards, guidelines, rulings, verification procedures and correction records applied to return-of-capital distributions from foreign exchange-traded funds. The Withholding Tax Division states that it does not produce or receive such records and therefore does not hold or manage them |
+| `09_tas_systemic_advocacy.pdf` | 15 pages, Korean–English parallel. Submission to the U.S. Taxpayer Advocate Service on payment-event-level transmission of the return-of-capital characterization through the qualified-intermediary reporting chain. The case advocate's name, the advocate number, the case number and the submitter's e-mail address are masked; the text is otherwise unaltered |
+
 ## Exhibit numbering
 
 | Series | Contents |
