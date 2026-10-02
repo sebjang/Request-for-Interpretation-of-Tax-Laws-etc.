@@ -188,7 +188,7 @@ taxpayer or assessment.</p>
   if (location.hash) {
     var id = decodeURIComponent(location.hash.slice(1));
     var t = document.getElementById(id);
-    if (t) { requestAnimationFrame(function () { t.scrollIntoView(); }); }
+    if (t) { t.scrollIntoView(); }
     else if (history.replaceState) { history.replaceState(null, '', location.pathname); }
   }
   var link = document.getElementById('langlink');
@@ -196,19 +196,23 @@ taxpayer or assessment.</p>
   var base = link.getAttribute('href').split('#')[0];
   var secs = SYNC.map(function (i) { return document.getElementById(i); })
                  .filter(function (e) { return e; });
-  var tick = false;
+  // 누르는 그 순간에 셈한다 — 숨은 탭에서 멈추는 requestAnimationFrame 에 기대지 아니한다
   function here() {
-    tick = false;
     var cur = '';
     for (var i = 0; i < secs.length; i++) {
       if (secs[i].getBoundingClientRect().top <= 120) { cur = secs[i].id; }
     }
-    if (window.scrollY < 40) { cur = ''; }
+    if ((window.scrollY || document.documentElement.scrollTop || 0) < 40) { cur = ''; }
     link.setAttribute('href', base + (cur ? '#' + cur : ''));
   }
-  function onScroll() { if (!tick) { tick = true; requestAnimationFrame(here); } }
-  addEventListener('scroll', onScroll, { passive: true });
-  addEventListener('resize', onScroll, { passive: true });
+  ['pointerdown', 'click', 'focus', 'touchstart'].forEach(function (e) {
+    link.addEventListener(e, here);
+  });
+  var last = 0;
+  addEventListener('scroll', function () {
+    var n = Date.now(); if (n - last > 150) { last = n; here(); }
+  }, { passive: true });
+  addEventListener('resize', here, { passive: true });
   here();
 })();
 </script>
