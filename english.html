@@ -174,8 +174,21 @@ th{background:var(--accent-soft); color:var(--ink); white-space:nowrap}
   if (location.hash) {
     var id = decodeURIComponent(location.hash.slice(1));
     var t = document.getElementById(id);
-    if (t) { t.scrollIntoView(); }
-    else if (history.replaceState) { history.replaceState(null, '', location.pathname); }
+    if (!t) {
+      if (history.replaceState) { history.replaceState(null, '', location.pathname); }
+    } else {
+      // 글꼴이 늦게 실리면 면의 높이가 바뀐다. 사람이 굴리기 전까지 몇 번 더 맞춘다.
+      var hold = false;
+      function go() { if (!hold) { t.scrollIntoView(); } }
+      ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (e) {
+        addEventListener(e, function () { hold = true; }, { passive: true, once: true });
+      });
+      go();
+      addEventListener('load', go);
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(go); }
+      [120, 350, 700].forEach(function (ms) { setTimeout(go, ms); });
+      setTimeout(function () { hold = true; }, 1200);
+    }
   }
   var link = document.getElementById('langlink');
   if (!link) return;
